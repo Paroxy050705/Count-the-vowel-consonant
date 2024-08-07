@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="cyan">
+    <h1>
+        <center>
+            <hr width="800" color="black" size="15">
+            Vowel & Consonant count
+            <hr width="800" color="black" size="15">
+        </center>
+    </h1>
+    <script>
+        let a=prompt("Enter a string:");
+        let z=0;
+        let c=0;
+        count(a);
+        function count(a){
+            for(let i of a){
+                if(i=='a' || i=='e' || i=='i' || i=='o' || i=='u'|| i=='A'|| i=='E'|| i=='O'||i=='U'){
+                    z++;
+                }
+                else{
+                    c++;
+                }
+            }
+            document.write("The string is:"+a);
+            document.write("<br>The number of vowel is:",+z);
+            document.write("<br>The number of consonant is:",+c);
+        }
+    </script>
+</body>
+</html>
